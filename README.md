@@ -57,5 +57,5 @@ The **Windows Services Analysis Tool** is a Python script designed to help you m
    Replace baseline_services.txt with the path to your baseline file if it is named differently.
 
 ## Error Handling
-If there is an issue executing the wmic command, the script will print an error message. Ensure you have appropriate permissions and that the wmic command is available on your system.
+If there is an issue executing the `wmic` command, the script will print an error message. Ensure you have appropriate permissions and that the `wmic` command is available on your system.
 
