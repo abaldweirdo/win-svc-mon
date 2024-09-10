@@ -50,6 +50,59 @@ The **Windows Services Analysis Tool** is a Python script designed to help you m
    ```
    Replace baseline_services.txt with the path to your baseline file if it is named differently.
 
+### Walkthrough
+
+1. **Create a New Service**
+
+   Open Command Prompt as Administrator and create a new test service:
+
+    ```bash
+    sc create TestService binPath= "C:\Windows\System32\svchost.exe -k netsvcs"
+    ```
+
+   This command creates a new service named `TestService`.
+
+2. **Create a Baseline**
+
+   Capture the current list of services by running:
+
+    ```bash
+    python script_name.py --create-baseline
+    ```
+
+   This command generates a file named `baseline_services.txt` with the current list of services and their paths.
+
+3. **Remove the Test Service**
+
+   Delete the previously created service using:
+
+    ```bash
+    sc delete TestService
+    ```
+
+   This command removes the `TestService` from your system.
+
+4. **Create Another New Service**
+
+   Create another new test service with a different name:
+
+    ```bash
+    sc create AnotherTestService binPath= "C:\Windows\System32\svchost.exe -k netsvcs"
+    ```
+
+   This command creates another new service named `AnotherTestService`.
+
+5. **Compare Services**
+
+   Compare the current list of services with the previously saved baseline:
+
+    ```bash
+    python script_name.py --compare baseline_services.txt
+    ```
+
+   This will display any new services that have been added (e.g., `AnotherTestService`) and any services that have been removed (e.g., `TestService`).
+
+
 ## Error Handling
 If there is an issue executing the `wmic` command, the script will print an error message. Ensure you have appropriate permissions and that the `wmic` command is available on your system.
 
