@@ -45,7 +45,7 @@ The **Windows Services Analysis Tool** is a Python script designed to help you m
    ```bash
    python script_name.py --create-baseline
    ```
-  This command will generate a file named baseline_services.txt containing the list of current services and their paths.
+   This command will generate a file named baseline_services.txt containing the list of current services and their paths.
 
 3. **Compare Services**
    To compare the current list of services with a previously saved baseline, use:
