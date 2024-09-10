@@ -1,4 +1,4 @@
-# Windows Services Analysis Tool
+# WinSvcMon
 
 ## Description
 
