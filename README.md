@@ -22,5 +22,39 @@ The **Windows Services Analysis Tool** is a Python script designed to help you m
 - **Compliance**: Maintain a record of service states for auditing and compliance purposes.
 
 ## Installation
+1. **Clone the repository**:
 
+    ```bash
+    git clone https://github.com/username/repository.git
+    ```
+
+2. **Navigate to the project directory**:
+
+    ```bash
+    cd repository
+    ```
+
+3. **Ensure Python is installed**: This script requires Python 3.6 or later. You can download Python from [python.org](https://www.python.org/downloads/).
+
+## Usage
+
+### Create a Baseline
+
+To create and save a baseline of Windows services, run:
+
+```bash
+python script_name.py --create-baseline
+```
+This command will generate a file named baseline_services.txt containing the list of current services and their paths.
+
+### Compare Services
+To compare the current list of services with a previously saved baseline, use:
+
+```bash
+python script_name.py --compare baseline_services.txt
+```
+Replace baseline_services.txt with the path to your baseline file if it is named differently.
+
+## Error Handling
+If there is an issue executing the wmic command, the script will print an error message. Ensure you have appropriate permissions and that the wmic command is available on your system.
 
