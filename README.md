@@ -37,7 +37,7 @@ The **Windows Services Analysis Tool** is a Python script designed to help you m
    To create and save a baseline of Windows services, run:
 
    ```bash
-   python script_name.py --create-baseline
+   python winsvcmon.py --create-baseline
    ```
    This command will generate a file named baseline_services.txt containing the list of current services and their paths.
 
@@ -46,7 +46,7 @@ The **Windows Services Analysis Tool** is a Python script designed to help you m
    To compare the current list of services with a previously saved baseline, use:
 
    ```bash
-   python script_name.py --compare baseline_services.txt
+   python winsvcmon.py --compare baseline_services.txt
    ```
    Replace baseline_services.txt with the path to your baseline file if it is named differently.
 
@@ -66,7 +66,7 @@ The **Windows Services Analysis Tool** is a Python script designed to help you m
    Capture the current list of services by running:
 
     ```bash
-    python script_name.py --create-baseline
+    python winsvcmon.py --create-baseline
     ```
 
    This command generates a file named `baseline_services.txt` with the current list of services and their paths.
@@ -96,7 +96,7 @@ The **Windows Services Analysis Tool** is a Python script designed to help you m
    Compare the current list of services with the previously saved baseline:
 
     ```bash
-    python script_name.py --compare baseline_services.txt
+    python winsvcmon.py --compare baseline_services.txt
     ```
 
    This will display any new services that have been added (e.g., `AnotherTestService`) and any services that have been removed (e.g., `TestService`).
