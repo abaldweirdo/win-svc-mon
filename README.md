@@ -99,7 +99,8 @@ The **Windows Services Analysis Tool** is a Python script designed to help you m
     python winsvcmon.py --compare baseline_services.txt
     ```
 
-   This will display any new services that have been added (e.g., `AnotherTestService`) and any services that have been removed (e.g., `TestService`).
+   Now as you can see `New Services Detected (e.g., AnotherTestService)` and `Removed Services Detected (e.g., TestService)` with path of execution.
+   
 
 
 ## Error Handling
