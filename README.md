@@ -37,8 +37,8 @@ The **Windows Services Analysis Tool** is a Python script designed to help you m
 3. **Ensure Python is installed**: This script requires Python 3.6 or later. You can download Python from [python.org](https://www.python.org/downloads/).
 
 ## Usage
-### Run command prompt as administrator
-### Create a Baseline
+1. **Run command prompt as administrator**
+2. **Create a Baseline**
 
 To create and save a baseline of Windows services, run:
 
@@ -47,7 +47,7 @@ python script_name.py --create-baseline
 ```
 This command will generate a file named baseline_services.txt containing the list of current services and their paths.
 
-### Compare Services
+3. **Compare Services**
 To compare the current list of services with a previously saved baseline, use:
 
 ```bash
