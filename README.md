@@ -40,20 +40,20 @@ The **Windows Services Analysis Tool** is a Python script designed to help you m
 1. **Run command prompt as administrator**
 2. **Create a Baseline**
 
-To create and save a baseline of Windows services, run:
+   To create and save a baseline of Windows services, run:
 
-```bash
-python script_name.py --create-baseline
-```
-This command will generate a file named baseline_services.txt containing the list of current services and their paths.
+   ```bash
+   python script_name.py --create-baseline
+   ```
+  This command will generate a file named baseline_services.txt containing the list of current services and their paths.
 
 3. **Compare Services**
-To compare the current list of services with a previously saved baseline, use:
+   To compare the current list of services with a previously saved baseline, use:
 
-```bash
-python script_name.py --compare baseline_services.txt
-```
-Replace baseline_services.txt with the path to your baseline file if it is named differently.
+   ```bash
+   python script_name.py --compare baseline_services.txt
+   ```
+   Replace baseline_services.txt with the path to your baseline file if it is named differently.
 
 ## Error Handling
 If there is an issue executing the wmic command, the script will print an error message. Ensure you have appropriate permissions and that the wmic command is available on your system.
