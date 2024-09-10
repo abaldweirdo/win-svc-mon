@@ -25,16 +25,10 @@ The **Windows Services Analysis Tool** is a Python script designed to help you m
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/username/repository.git
+    git clone https://github.com/abaldweirdo/winsvcmon.git
     ```
 
-2. **Navigate to the project directory**:
-
-    ```bash
-    cd repository
-    ```
-
-3. **Ensure Python is installed**: This script requires Python 3.6 or later. You can download Python from [python.org](https://www.python.org/downloads/).
+2. **Ensure Python is installed**: This script requires Python 3.6 or later. You can download Python from [python.org](https://www.python.org/downloads/).
 
 ## Usage
 1. **Run command prompt as administrator**
