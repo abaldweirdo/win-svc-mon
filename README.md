@@ -50,8 +50,7 @@ The **Windows Services Analysis Tool** is a Python script designed to help you m
    ```
    Replace baseline_services.txt with the path to your baseline file if it is named differently.
 
-### Walkthrough
-
+## Walkthrough
 1. **Create a New Service**
 
    Open Command Prompt as Administrator and create a new test service:
